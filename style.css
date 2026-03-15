@@ -1,85 +1,105 @@
+/* General page styling */
 body{
-font-family: Arial;
-background:#f4f4f4;
-text-align:center;
+    font-family: Arial;
+    background:#f4f4f4;
+    text-align:center;
 }
 
+/* Title styling */
 .title{
-color:red;
-font-size:35px;
+    color:red;
+    font-size:35px;
 }
 
+/* Form styling */
 form{
-background:white;
-padding:20px;
-width:320px;
-margin:auto;
-border-radius:10px;
-box-shadow:0 0 10px gray;
+    background:white;
+    padding:20px;
+    width:320px;
+    margin:auto;
+    border-radius:10px;
+    box-shadow:0 0 10px gray;
 }
 
 input{
-width:100%;
-margin:6px;
-padding:8px;
+    width:100%;
+    margin:6px;
+    padding:8px;
 }
 
 button{
-background:red;
-color:white;
-padding:10px;
-border:none;
-cursor:pointer;
-font-size:16px;
+    background:red;
+    color:white;
+    padding:10px;
+    border:none;
+    cursor:pointer;
+    font-size:16px;
 }
 
+/* PVC card container */
 .pvc-card{
-width:900px;
-margin:30px auto;
-border:6px solid red;
-background:white;
+    width:900px;
+    margin:30px auto;
+    border:6px solid red;
+    background:white;
+    border-radius:10px;
+    overflow:hidden;
 }
 
+/* Header section */
 .header{
-background:red;
-color:yellow;
-padding:15px;
-font-size:28px;
-font-weight:bold;
+    background:red;
+    color:yellow;
+    padding:15px;
+    font-size:28px;
+    font-weight:bold;
 }
 
 .header p{
-font-size:18px;
-margin-top:5px;
+    font-size:18px;
+    margin-top:5px;
 }
 
+/* Card body with horizontal TVK flag stripes */
 .card-body{
-display:flex;
-align-items:center;
-padding:20px;
-background:linear-gradient(red, yellow, red);
+    display:flex;
+    align-items:center;
+    padding:20px;
+    background: linear-gradient(to bottom, red 0%, red 33%, yellow 33%, yellow 66%, red 66%, red 100%);
 }
 
+/* Left section: user photo (square, smaller than Vijay) */
 .left{
-width:25%;
+    width:25%;
 }
 
 .user-photo{
-width:150px;
-border:4px solid white;
+    width:150px;      /* square width */
+    height:150px;     /* square height */
+    border:4px solid white;
+    border-radius:0;  /* square shape */
+    object-fit:cover;
 }
 
+/* Middle section: user details */
 .middle{
-width:45%;
-text-align:left;
-font-size:18px;
-font-weight:bold;
+    width:45%;
+    text-align:left;
+    font-size:18px;
+    font-weight:bold;
+    padding-left:10px;
 }
 
+/* Right section: Vijay image */
 .right{
-width:30%;
+    width:30%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
 }
 
 .vijay{
-width:220px;
+    width:220px;
+    border-radius:5px;
+    object-fit:cover;
 }
